@@ -96,7 +96,7 @@ h2 {
 }
 
 
-
+/* The following is not used */
 
 
 .flexbox-container {
@@ -157,4 +157,4 @@ border-image: img src="{{ url_for('static', filename='assets/img/frame1.jpg)}}" 
     background:  url_for('static', filename='assets/img/MBA.png')}};
 } 
 
-         
+        
