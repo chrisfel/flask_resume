@@ -12,4 +12,4 @@ def index():
 @app.route('/degrees')
 def degrees():
 		
-		return render_template('degrees4.html')
+		return render_template('index2.html')

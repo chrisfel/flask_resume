@@ -75,6 +75,7 @@ h2 {
 }
 
 .img-box h3 {
+    text-align: center;
     color: #305164;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -91,7 +92,7 @@ h2 {
 
 .img-box:hover h3 {
     opacity: 1;
-    bottom: 25px;
+    bottom: -3px;
 }
 
 
