@@ -1,0 +1,160 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 200%;
+    padding-top: 50px;
+    background: #f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-box {
+    width: 100px;
+    height: 500px;
+    margin: 10px;
+    border-radius: 50px;
+    background: url('/static/assets/img/MBA.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.img-box:nth-child(2) {
+    background: url('/static/assets/img/USM_Bachelors.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-box:nth-child(3) {
+    background: url('/static/assets/img/MGCCC_Associates_of_Science.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-box:nth-child(4) {
+    background: url('/static/assets/img/MGCCC_Associates_of_Arts.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-box:nth-child(5) {
+    background: url('/static/assets/img/FCCJ_Associates_of_Arts.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-box:nth-child(6) {
+    background: url('/static/assets/img/Journeyman Wireman Diploma.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-box:nth-child(7) {
+    background: url('/static/assets/img/Completion of Apprenticeship.png');
+    background-size: cover;
+    background-position: center; 
+}
+
+.img-box h3 {
+    color: #305164;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    opacity: 0;
+    transition: bottom 0.5s;
+}
+
+.img-box:hover {
+    width: 1000px;
+
+    cursor: pointer;
+}
+
+.img-box:hover h3 {
+    opacity: 1;
+    bottom: 25px;
+}
+
+
+
+
+
+.flexbox-container {
+    margin-left: 5px;
+    padding-left: 15px;
+    background-color: green;
+    flex-direction: column;
+    height: 850px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}  
+
+.padded {
+width: 5px;
+height: 5px;
+padding-left: 2px;   
+padding-top: 4px;
+height:1px /* original height (25px) minus padding-top (3px) */   
+}
+
+.image-container img {
+/*transition: transform 0.3s ease-in-out;*/
+
+border: 1px solid #ddd; /* Gray border */
+border-radius: 2px;  /* Rounded border */
+padding: 5px; /* Some padding */
+width: 140px; /* Set a small width */
+flex-wrap: nowrap;
+} 
+
+/* Add a hover effect (blue shadow) */
+.image-container img:hover {
+
+-webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+transform: scale(600%);
+display: flex;
+align-items: center;
+position: absolute;
+/*bottom: 20em;
+top: 15em;*/
+left: 20em; /*limit*/
+right: 80em;
+box-shadow: 0 0 3px 1px rgba(0, 140, 186, 0.5);
+
+}
+
+.border1 {
+border: 10px solid transparent;
+padding: 15px;
+border-image: img src="{{ url_for('static', filename='assets/img/frame1.jpg)}}" 30 round;
+} 
+
+#MBA {
+    background:  url_for('static', filename='assets/img/MBA.png')}};
+} 
+
+         

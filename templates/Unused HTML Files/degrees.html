@@ -1,0 +1,85 @@
+<style>
+    li {
+    width: 5px;
+    height: 5px;
+    border: solid 1px black;
+    }
+
+    .padded {
+        padding-top: 3px;
+        height:2px /* original height (25px) minus padding-top (3px) */   
+    }
+
+    .image-container img {
+        /*transition: transform 0.3s ease-in-out;*/
+            
+      border: 1px solid #ddd; /* Gray border */
+      border-radius: 4px;  /* Rounded border */
+      padding: 5px; /* Some padding */
+      width: 150px; /* Set a small width */
+    } 
+
+    /* Add a hover effect (blue shadow) */
+    .image-container img:hover {
+    transform: scale(500%);
+    position: relative;
+    bottom: 20em;
+    top: 15em;
+    left: 20em; /*limit*/
+    right: 80em;
+    box-shadow: 0 0 3px 1px rgba(0, 140, 186, 0.5);
+    }
+
+    .border1 {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: img src="{{ url_for('static', filename='assets/img/frame1.jpg)}}" 30 round;
+    } 
+</style>
+
+
+<h2 class="mb-5">Awards & Certifications</h2>
+                <div class="image-container">
+                    <ul class="fa-ul mb-0">
+                        <li class="padded">
+                           <span class="d-none d-lg-block"><img src="{{ url_for('static', filename='assets/img/MBA.png')}}" alt="..." /> 
+                           </span>                              
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            MBA
+                        </li>
+                        <li class="padded">
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            Mobile Web Specialist - Google Certification
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            2
+                            <sup>nd</sup>
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            1
+                            <sup>st</sup>
+                            Place - James Buchanan High School - Hackathon 2006
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                            3
+                            <sup>rd</sup>
+                            Place - James Buchanan High School - Hackathon 2005
+                        </li>
+                    </ul>
+                </div> 
